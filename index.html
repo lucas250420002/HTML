@@ -10,9 +10,9 @@
                 <img src="img/outletpark4.png" >
                 </a>
       
-                <nav class="nav-main">
+                <nav class="nav-main a">
 <!-- menu -->
-                        <ul class="nav- menu">
+                        <ul class="nav- main a">
                                 <li>
                                    <a href="#TIENDAS">tiendas</a>
                                 </li>
@@ -25,33 +25,35 @@
                                         <a href="#ubicacion">ubicacion</a>
                                 </li>
                        
-<!-- slider-->>         
-        <div class="container-slider">
-                <div class="slider" id="slider">
-                        <div class="slider__section">
-                                <img src="img/outletpark1.png " width="5000" 
-                                 class="slider__img">
-                        </div>
-                        <div class="slider__section">
-                                <img src="img/outletpark2.png " width="500" 
-                                 class="slider__img">
-                        </div>
-                        <div class="slider__section">
-                                <img src="img/outletpark3.png " width="500" 
-                                 class="slider__img">
-                        </div>
-                                 <div class="slider__section">
-                                        <img src=" " alt=" "
-                                         class="slider__img">
-                        </div>
-                </div>
-                <div class="slider__btn slider__btn--rigth" id="slider__rigth"></div>
-                <div class="slider__btn slider__btn--left" id="btn-left"><</div>
-                
+<!-- slider-->      
+                        
+<div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/outletpark1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/outletpark2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/outletpark3.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
 
-
-        <script src="slider.js"></script>
+        <script src="index.js"></script>
 <!--terminacion slider-->
 
 <div class="elementor-column">
@@ -76,13 +78,13 @@
                                                 
                                                                                         <h2 class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--grow">
                                                                 Deco Hogar					</h2>
-                                                
+                <!-- estilo css-->
+                <link rel="stylesheet" href="styles.css">
+
 </body>
 </html>
 
-        
-                <!-- estilo css-->
-                <link rel="stylesheet" href="styles.css">
+                
                      
         
 

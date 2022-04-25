@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+*{
+box-sizing: border-box;
+}
+body{
+display: flex;
+min-width: 100vh;
+background: #ffff;
+
+ }
+ .container-slider {
+     width: 100%;
+     max-width: 9000px;
+     margin: auto;
+     overflow: hidden;
+ }
+ .slider{
+     display: flex;
+     width: 400%;
+     height: 400px;
+     margin-left: -100%;
+ }
+ .slider__section{
+     width: 100%;
+ }
+ .slider__img{
+     display: block;
+     width: 100%;
+     height: 100%;
+ }
+ .slider__btn{
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background: rgba(255,255 , 255, 0,7);
+     top:50%;
+     transform: translateY(-250%);
+     font-size: 30px;
+     font-weight: bold;
+     font-family: monospace;
+     text-align: center;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .slider__btn:hover{
+     background:#ffff;
+ }
+ .slider.left{
+    left: 15px;
+ }
+ .slider.rigth{
+    right: 10px;
+ }
+
+</style>
+</head>
+<body>
+  <div class="container-slider">
+    <div class="slider" id="slider">
+            <div class="slider__section">
+                    <img src="img/outletpark1.png " width="5000" 
+                     class="slider__img">
+            </div>
+            <div class="slider__section">
+                    <img src="img/outletpark2.png " width="500" 
+                     class="slider__img">
+            </div>
+            <div class="slider__section">
+                    <img src="img/outletpark3.png " width="500" 
+                     class="slider__img">
+            </div>
+                     <div class="slider__section">
+                            <img src=" " alt=" "
+                             class="slider__img">
+            </div>
+    </div>
+    <div class="slider__btn slider__btn--rigth" id="slider__rigth"></div>
+    <div class="slider__btn slider__btn--left" id="btn-left"><</div>
+    
+</div>
+
+
+
+<script>
+const slider = document.querySelector("slider");
+let sliderSection = document.querySelectorAll("slider-section");
+let sliderSectionLast = sliderSections[sliderSections.length - 1];
+
+const btnletf = document.querySelector("#btn-left");
+const btnRIgth = document.querySelector("#btn-rigth");
+
+slider.insertAdjacentElement('afterbegin, sliderSectionLast');
+
+function Next() {
+let sliderSectionFirst = document.querySelectorAll("slider__section ")[0%];
+slider.style.marginLeft="-200%"
+slider.styke.transition= "all 0.5s";
+setTimeout(function(){
+slider.style.transition="none";
+slider.insertAdjacentElement('beforend', sliderSectionFirst);
+slider.style.marginLeft="-100%";
+    },
+}
+-------------------------------------
+
+</scrifunction showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000);
+}pt>
+
+</body>
+</html> 
