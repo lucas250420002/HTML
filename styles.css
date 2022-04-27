@@ -62,10 +62,13 @@ li a:hover {
 .active, .dot:hover {
   background-color: #3d3c3cc0;
 }
+
+
 /*________________________________________________*/
 .container {
+  float: left;
   position: relative;
-  width: 20%;
+  width: 25%;
 }
 .middle {
   transition: .5s ease;
@@ -84,4 +87,6 @@ li a:hover {
 .container:hover .middle {
   opacity: 100;
 }
+
+
 
