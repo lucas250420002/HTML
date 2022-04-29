@@ -4,21 +4,23 @@
    <title> Viña Outlet Park </title>
 </head>
 
-<body>
-                <img src="img/outletpark4.png" > <!--link de primer imagen viña outlet park -->
-                <nav class="nav-main a">
+<body>               
 <!-- menu -->
-                        <ul class="nav- main a">
+                        <div id="menu" class="navbar">
+               
+                        
+                                <ul class="nav-main a"></nav>
+                                <img src="img/outletpark4.png">
                                 <li>
-                                   <a href="#TIENDAS">tiendas</a>
+                                   <a href="#TIENDAS">Tiendas<img src="img/tiendas.ico" ></a>
                                 </li>
 
                                 <li>
-                                        <a href="#panorama">panorama</a>
+                                        <a href="#panorama">Panorama<img src="img/panoramas.ico"></a>
                                 </li>
 
                                 <li>
-                                        <a href="#ubicacion">ubicacion</a>
+                                        <a href="#ubicacion">Ubicacion<img src="img/ubicacion.ico"></a>
                                 </li>
 <!-- slider-->                   
                                 <div class="slideshow-container">
@@ -35,52 +37,72 @@
                                                 </div>
                                                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                                                 <a class="next" onclick="plusSlides(1)">❯</a>
+                                                <br>
                                         </div>
                                         <div style="text-align:center">
                                                 <span class="dot" onclick="currentSlide(1)"></span> 
                                                 <span class="dot" onclick="currentSlide(2)"></span> 
                                                 <span class="dot" onclick="currentSlide(3)"></span> 
                                         </div>  <!--terminacion slider-->
-        <script src="index.js"></script> <!-- link del enlace javaScript -->
+        <!-- seccion de tiendas-->
                 <h2> TIENDAS</h2>
-                
                 <div class="container">
-                        <div class="column"></div>
-                        <img src="img/Mujer.jpg"  class="image" style="width:100%",>
+                        <img src="img/Mujer.jpg"  class="image" style="width:100%">
                         <div class="middle">
                           <div class="texto">Mujer</div>
                         </div>
                       </div>
                 <div class="container">
-                        <div class="column"></div>
                         <img src="img/Hombre.jpg"  class="image" style="width:100%">
                         <div class="middle">
                           <div class="texto">Hombre</div>
                         </div>
                       </div>
                 <div class="container">
-                        <div class="column"></div>
                         <img src="img/Infantil.jpg"  class="image" style="width:100%">
                         <div class="middle">
-                          <div class="texto">INFANTIL</div>
+                          <div class="texto">Infantil</div>
                         </div>
                      </div>
                 <div class="container">
-                        <div class="column"></div>
                 <img src="img/DecoHogar.jpg"  class="image" style="width: 100%">
                 <div class="middle">
-                  <div class="texto">DECO HOGAR</div>
+                  <div class="texto">Deco Hogar</div>
                   </div>
                 </div>
-
-                <section>
-                        <br>
+<!--seccion panoramas-->
                 <h2> Panoramas </h2>
-                
-                <img src="img/Mapa.PNG" class="img" style="width: 1300px">
+
+                <div class="Panoramas">
+                        <img src="img/minion.png" class="image" style="width:450px">
+                </div>
+
+                <div class="Panoramas">
+                        <img src="img/DiscoveryLands.png" class="image" style="width:450px">
+                </div>
+
+                <div class="Panoramas">
+                        <img src="img/auto.png" class="image" style="width:450px">
+                </div>
+
+                <div class="Panoramas">
+                        <img src="img/Comida.png" class="image" style="width:450px">
+                </div>
+
+                <div class="Panoramas">
+                        <img src="img/Emprendedores.png" class="image" style="width:450px">
+                </div>
+
+                <div class="Panoramas">
+                        <img src="img/MasPanpramas.png" class="img" style="width: 450px">
+                </div>
         </div>
-                <link rel="stylesheet" href="styles.css"> <!--link del estilo css-->
+
+        <div class="#">
+                <img src="img/Mapa.PNG" style="width:50%">
                 
+                <link rel="stylesheet" href="styles.css"> <!--link del estilo css-->
+                <script src="index.js"></script> <!-- link del enlace javaScript -->
 </section>
 </body>
 </html>

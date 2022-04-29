@@ -1,15 +1,15 @@
-/* menu css*/
 * {box-sizing: border-box}
 body {font-family: Arial, Helvetica, sans-serif};
-
+/* menu css*/
 .nav-main {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }
 .nav-main a {
+  float: left; 
   display: block;
   color: #000000;
-  padding: 20px 90px;
+  padding: 10px 30px;
   text-decoration: none;
 }
 ul {
@@ -18,37 +18,25 @@ ul {
   padding: 0;
   background-color: #fff;
 }
-li {
-  float: left;
-}
 li a:hover {
   background-color: rgb(222, 219, 219);
 }
-/* ______________________________________________________________________ */
+
 /* slider css*/
 .slideshow-container {
-  max-width: 9000px;
+  max-width: 100%;
   margin: auto;
 }
-.prev, .next {
+.prev, .next {  /* botones siguiente y previo*/
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.dot {
+.dot { /* indicadores debajo de la imagen del slider*/
   cursor: pointer;
   height: 6px;
   width: 6px;
@@ -56,23 +44,21 @@ li a:hover {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.4s ease;
 }
-
 .active, .dot:hover {
   background-color: #3d3c3cc0;
 }
 
-
-/*________________________________________________*/
+/*opacidad en imagenes, seccion tiendas*/
 .container {
   float: left;
   position: relative;
   width: 25%;
 }
 .middle {
-  transition: .5s ease;
-  opacity: 0;
+  background-color: #ffffff20;
+  transition: .1s ease;
+  opacity: 100;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,12 +66,13 @@ li a:hover {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .container:hover .image {
-  opacity: 0.3;
+  opacity: 0.7;
 }
-.container:hover .middle {
-  opacity: 100;
+/*seccion panoramas*/
+.Panoramas{
+  float: left;
+  width: 20%;
 }
 
 

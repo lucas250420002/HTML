@@ -1,5 +1,7 @@
+//comienzo slider en js
 let slideIndex = 1;
 showSlides(slideIndex);
+//manejo del slider, siguente-anterior
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -21,6 +23,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
 
 
 
